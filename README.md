@@ -33,7 +33,6 @@ password : password
 <img width="1434" alt="Screenshot 2023-03-07 at 12 48 50" src="https://user-images.githubusercontent.com/54837875/223324224-21e0650c-ac17-4bef-b43d-bc6d4b180f6f.png">
 <img width="1436" alt="Screenshot 2023-03-07 at 15 24 50" src="https://user-images.githubusercontent.com/54837875/223353096-3baef7c0-efec-4cae-b746-e91207b74767.png">
 <img width="1431" alt="Screenshot 2023-03-07 at 12 48 39" src="https://user-images.githubusercontent.com/54837875/223324119-132af400-9597-44c2-8db4-25f8b1cdacec.png">
-<img width="1434" alt="Screenshot 2023-03-07 at 12 48 50" src="https://user-images.githubusercontent.com/54837875/223324125-5453734c-5d3f-4cca-86d6-164da7023b1f.png">
 <img width="1431" alt="Screenshot 2023-03-07 at 15 25 24" src="https://user-images.githubusercontent.com/54837875/223353083-c47c4aab-321a-4035-9b65-6d8ca6281062.png">
 .png">
 <img width="1430" alt="Screenshot 2023-03-07 at 12 49 17" src="https://user-images.githubusercontent.com/54837875/223324130-a59796fb-7c02-4403-9cfd-26b27dbacb4e.png">
