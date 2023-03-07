@@ -27,7 +27,7 @@ password : password
 email : dva@gmail.com\
 password : password
 
-<img width="1431" alt="Screenshot 2023-03-07 at 12 46 48" src="https://user-images.githubusercontent.com/54837875/223324073-a5a5640b-5152-4cac-9b9f-b756b436aaf3.png">
+<img width="1434" alt="Screenshot 2023-03-07 at 15 22 49" src="https://user-images.githubusercontent.com/54837875/223352577-d1092960-b3e9-42dd-97a7-56a7b1f1fd69.png">
 <img width="1428" alt="Screenshot 2023-03-07 at 12 48 02" src="https://user-images.githubusercontent.com/54837875/223324102-b54063aa-0d01-44ea-8df8-4a5296031d9b.png">
 <img width="1434" alt="Screenshot 2023-03-07 at 12 48 28" src="https://user-images.githubusercontent.com/54837875/223324111-3983f5ee-d952-4345-9ab7-5fe34f9cd223.png">
 <img width="1434" alt="Screenshot 2023-03-07 at 12 48 50" src="https://user-images.githubusercontent.com/54837875/223324224-21e0650c-ac17-4bef-b43d-bc6d4b180f6f.png">
