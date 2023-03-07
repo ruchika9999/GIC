@@ -19,4 +19,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Runs thebakend development mode.\
 Open [http://localhost:5001]
 
+## Poject have two type of permission (Admin and general)
+### 1 => Admin user 
+### email : cva@gmail.com || password : password
+### 2 => General user
+### email : dva@gmail.com || password : password
+
 
