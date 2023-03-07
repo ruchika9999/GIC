@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run devStart`
 
-Runs thebakend development mode.\
+Runs the bakend development mode.\
 Open [http://localhost:5001]
 
 ## Poject have two type of permission (Admin and general)
