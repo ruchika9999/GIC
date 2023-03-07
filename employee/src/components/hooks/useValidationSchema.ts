@@ -1,7 +1,7 @@
 import { object, string } from "yup";
 import { FieldConstant, Name } from "../../util/constant";
 
-import "yup-phone-lite";
+// import "yup-phone-lite";
 
 const phoneRegExp = /^((\+65|65)?\s*(8|9)\d{7})$/;
 
