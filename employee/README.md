@@ -27,9 +27,8 @@ password : password
 
 ### 2 => General user
 
-email : cva@gmail.com\
+email : dva@gmail.com\
 password : password
-
 
 
 
