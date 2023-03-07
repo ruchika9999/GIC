@@ -10,9 +10,14 @@ import {
 import { FieldConstant, genders } from "../../../util/constant";
 import { EmployeeDetailsType } from "../../../util/type";
 
-
 const Gender = () => {
-  const { control, watch } = useFormContext<EmployeeDetailsType>();
+  const {
+    control,
+    watch,
+    formState: { errors },
+  } = useFormContext<EmployeeDetailsType>();
+
+  const isError = errors[FieldConstant.GENDER];
 
   return (
     <Controller
@@ -26,13 +31,20 @@ const Gender = () => {
               aria-labelledby="demo-row-radio-buttons-group-label"
               name={name}
             >
-              {genders.map((option) => (
+              {genders.map((option, index) => (
                 <FormControlLabel
+                  key={index}
                   onChange={(e) => {
                     onChange(e);
                   }}
                   value={option.value}
-                  control={<Radio />}
+                  control={
+                    <Radio
+                      sx={{
+                        color: isError ? "error.main" : "",
+                      }}
+                    />
+                  }
                   label={option.label}
                   id={option.label}
                   checked={

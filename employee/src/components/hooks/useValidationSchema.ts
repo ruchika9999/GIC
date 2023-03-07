@@ -3,6 +3,7 @@ import { FieldConstant, Name } from "../../util/constant";
 
 import "yup-phone-lite";
 
+const phoneRegExp = /^((\+65|65)?\s*(8|9)\d{7})$/;
 
 const employeeValidationSchema = () => {
   const emailValidation = string()
@@ -18,8 +19,12 @@ const employeeValidationSchema = () => {
         return value.length >= 6;
       });
   };
+  // const mobileValidation = string()
+  //   .phone("SG", "Please enter a valid phone number")
+  //   .required("A phone number is required");
+
   const mobileValidation = string()
-    .phone("SG", "Please enter a valid phone number")
+    .matches(phoneRegExp, "Please enter a valid phone number")
     .required("A phone number is required");
 
   const genderValidation = string().required("Gender is required");

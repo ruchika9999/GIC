@@ -13,8 +13,8 @@ import {
   Tooltip,
 } from "@mui/material";
 
-import { logout } from "./../../../store/auth/authSlice";
-import { useAppDispatch } from "../../../store/hooks";
+import { logout, selectAuth } from "./../../../store/auth/authSlice";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 
 import useAccess from "../../hooks/useAccess";
 import { Permission, ROUTE } from "../../../util/constant";
@@ -25,6 +25,8 @@ const TopNavigation = () => {
   const navigator = useNavigate();
   const haveAccess = useAccess();
   const dispatch = useAppDispatch();
+  const user = useAppSelector(selectAuth)
+
 
   const menuItems: MenuItemType[] = [
     {
@@ -86,7 +88,7 @@ const TopNavigation = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user.userProfile?.userName} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

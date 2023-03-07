@@ -64,15 +64,13 @@ const EmployeeProfile = (profile: EmployeeDetailsType & ProfileActionType) => {
     <>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          {" "}
           <Avatar />
         </ListItemAvatar>
-
         <ListItemText
           primary={
             <Typography
               sx={{ display: "inline" }}
-              component="span"
+              component="div"
               variant="subtitle1"
               color="text.primary"
               fontWeight={"bold"}
@@ -81,7 +79,7 @@ const EmployeeProfile = (profile: EmployeeDetailsType & ProfileActionType) => {
             </Typography>
           }
           secondary={
-            <React.Fragment>
+            <Box>
               <Box display={"flex"}>
                 <Box>
                   <Typography variant="overline" {...subHeader}>
@@ -119,7 +117,7 @@ const EmployeeProfile = (profile: EmployeeDetailsType & ProfileActionType) => {
                   </Typography>
                 </Box>
               </Box>
-            </React.Fragment>
+            </Box>
           }
         />
         <Box marginTop={2.5}>

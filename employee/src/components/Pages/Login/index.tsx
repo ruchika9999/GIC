@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {  Box, Button, CircularProgress, Grid } from "@mui/material";
+import { Box, Button, CircularProgress, Grid, Typography } from "@mui/material";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
 import {
@@ -84,12 +84,22 @@ const Login = () => {
           sx={{ flexGrow: 1 }}
         >
           <Grid container columns={Space.TWELVE}>
+            <Grid item xs={12} padding={Space.ONE_AND_HALF}>
+              <Typography
+                variant="h5"
+                color="text.primary"
+                fontWeight={600}
+                sx={{ mb: 2, textAlign: "center" }}
+              >
+                EMPLOYEE
+              </Typography>
+            </Grid>
             {isLoginStatusFailed && (
               <Grid item xs={12} sx={{ mb: 2 }} padding={Space.ONE_AND_HALF}>
                 {displayMissingField({
                   message: DisplayMessage.FAILED_TO_LOGIN,
                   display: isLoginStatusFailed,
-                  fullWith : true
+                  fullWith: true,
                 })}
               </Grid>
             )}
@@ -97,7 +107,7 @@ const Login = () => {
             <Grid item xs={12} padding={Space.ONE_AND_HALF}>
               <Email />
             </Grid>
-            <Grid xs={12} padding={Space.ONE_AND_HALF}>
+            <Grid item xs={12} padding={Space.ONE_AND_HALF}>
               <Password />
             </Grid>
           </Grid>

@@ -37,7 +37,7 @@ export enum Name {
 
 export enum CharacterLimit {
   NAME_CHARACTER_LIMIT = 10,
-  MOBILE_CHARACTER_LIMIT = 8,
+  MOBILE_CHARACTER_LIMIT = 11,
 }
 export enum ModalStatus {
   ADD = "ADD USER",

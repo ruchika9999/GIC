@@ -7,6 +7,7 @@ export const RESET = null;
 export const getTokenData = (token: string) => {
   const data: LoginUserType = jwt_decode(token);
 
+
   if (!data) return null;
 
   return {

@@ -17,10 +17,12 @@ const Date = () => {
 
   const yesterday = dayjs().subtract(1, "day");
 
-
+  
   const errorMessage = useMemo(() => {
     return error ? "Your date is not valid" : "";
   }, [error]);
+
+  // need to add DatePicker on submit validation
 
   return (
     <Controller
@@ -44,7 +46,7 @@ const Date = () => {
                 />
               </DemoItem>
             </DemoContainer>
-            <FormHelperText sx={{ ml: 2, color: "error.main" }}>
+            <FormHelperText sx={{ ml: 2 }}>
               {error?.message || errorMessage}
             </FormHelperText>
           </LocalizationProvider>

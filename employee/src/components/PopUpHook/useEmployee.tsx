@@ -104,7 +104,7 @@ const useUserProfile = (props: EmployeeFormType) => {
   };
 
   const handleClickOpen = (modalStatus: ModalDataType) => {
-    if (modalStatus?.employeeData) setEmployeeData(modalStatus);
+    setEmployeeData(modalStatus);
     setOpen(true);
   };
 
@@ -190,44 +190,46 @@ const useUserProfile = (props: EmployeeFormType) => {
               message: validationError.errorMessage,
               display: isErrors,
             })}
-            <Box
-              component="form"
-              marginTop={Space.THREE}
-              marginBottom={Space.THREE}
-            >
-              <Grid container columns={Space.TWELVE}>
-                <Grid
-                  xs={Space.SIX}
-                  spacing={Space.TWO}
-                  padding={Space.ONE_AND_HALF}
-                >
-                  <UserName name={FieldConstant.FIRST_NAME} />
-                </Grid>
-                <Grid
-                  xs={Space.SIX}
-                  spacing={Space.TWO}
-                  padding={Space.ONE_AND_HALF}
-                >
-                  <UserName name={FieldConstant.LAST_NAME} />
-                </Grid>
-                <Grid xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
-                  <Gender />
-                </Grid>
-                <Grid xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
-                  <Email />
-                </Grid>
-                <Grid xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
-                  <Mobile />
-                </Grid>
-                <Grid xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
-                  <Date />
-                </Grid>
-              </Grid>
-            </Box>
           </DialogContentText>
+          <Box
+            component="form"
+            marginTop={Space.THREE}
+            marginBottom={Space.THREE}
+          >
+            <Grid container columns={Space.TWELVE}>
+              <Grid item xs={Space.SIX} padding={Space.ONE_AND_HALF}>
+                <UserName name={FieldConstant.FIRST_NAME} />
+              </Grid>
+              <Grid item xs={Space.SIX} padding={Space.ONE_AND_HALF}>
+                <UserName name={FieldConstant.LAST_NAME} />
+              </Grid>
+              <Grid item xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
+                <Gender />
+              </Grid>
+              <Grid item xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
+                <Email />
+              </Grid>
+              <Grid item xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
+                <Mobile />
+              </Grid>
+              <Grid item xs={Space.TWELVE} padding={Space.ONE_AND_HALF}>
+                <Date />
+              </Grid>
+            </Grid>
+          </Box>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>CANCEL</Button>
+          <Button
+            onClick={() => {
+              handleClose();
+              setError((status) => ({
+                ...status,
+                status: false,
+              }));
+            }}
+          >
+            CANCEL
+          </Button>
           <Button variant="contained" onClick={handleSubmit(onSubmit, onError)}>
             CONFIRM
           </Button>
