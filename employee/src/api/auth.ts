@@ -14,3 +14,4 @@ export class UserApi {
     return this._network.post<AccessToken>(`${this._url}/login`, userDetails);
   };
 }
+
